@@ -1,0 +1,50 @@
+.fade-in {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 700;
+    width: inherit;
+    min-width: 70%;
+    outline: 0;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 1s;
+}
+
+.fade-out {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 700;
+    width: inherit;
+    min-width: 70%;
+    outline: 0;
+    transform: translate(-50%, -50%);
+    animation: fadeOut .5s;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -10%);
+        min-width: 0%;
+        left: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        min-width: 70%;
+        left: 50%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
